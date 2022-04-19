@@ -1,0 +1,39 @@
+<%- include('./Navbar'); %>
+
+
+<div class="Post_List" id="app">
+    <div v-for="post in posts" class="Post_Preview">
+        <div class="Post_Image">
+          <h1>No Image available</h1>
+        </div>
+        <div class="Post_Details">
+            <p>{{post.Author}}</p>
+            <p>{{post.Date}}</p>
+        </div>
+        <a v-bind:href="'http://localhost:3000/Post/' + post.ID" target="_blank"><h2>{{post.Title}}</h2></a>
+    </div>
+</div>
+
+
+
+<script>
+Vue.createApp({
+  data() {
+    return {
+      posts: [{
+          ID: "1234",
+          Author: "Chris",
+          Title: "Title 1",
+          Date: new Date().toLocaleDateString()
+      }, {
+          ID: "1234",
+          Author: "Brainer",
+          Title: "Title 2",
+          Date: new Date().toLocaleDateString()
+      }]
+    }
+  }
+}).mount('#app')
+</script>
+
+<%- include('./footer') %>

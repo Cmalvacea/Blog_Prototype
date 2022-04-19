@@ -1,0 +1,14 @@
+<%- include('./Navbar'); %>
+
+
+<div class="Post">
+    <div></div>
+    <article>
+        <h1><%= Title ? Title : "Title" %></h1>
+        <h4>By <span><%= Author ? Author : "Author" %></span></h4>
+        <p><%= Content ? Content : "Content" %></p>
+    </article>
+</div>
+
+
+<%- include('./footer') %>

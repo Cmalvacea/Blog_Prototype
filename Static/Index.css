@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 1px solid #b6b6b6;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Fredoka', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 40%;
+}
+
+nav div a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.Post_List {
+  width: 70%;
+  margin: auto;
+  margin-top: 9%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  gap: 100px;
+}
+
+.Post_List .Post_Preview {
+  border-radius: 10px;
+  border-left: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-box-shadow: 5px 5px 10px #dddddd;
+          box-shadow: 5px 5px 10px #dddddd;
+}
+
+.Post_List .Post_Preview .Post_Image {
+  height: 400px;
+  border-bottom: 1px solid gainsboro;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Post_List .Post_Preview .Post_Image h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.Post_List .Post_Preview div {
+  width: 90%;
+  margin: auto;
+}
+
+.Post_List .Post_Preview .Post_Details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 400;
+}
+
+.Post_List .Post_Preview a {
+  text-decoration: none;
+  color: black;
+}
+
+.Post_List .Post_Preview a:hover {
+  color: gray;
+}
+
+.Post_List .Post_Preview h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.Post {
+  width: 65%;
+  margin: auto;
+  margin-top: 7%;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  -webkit-box-shadow: 4px 4px 7px gainsboro;
+          box-shadow: 4px 4px 7px gainsboro;
+}
+
+.Post div {
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.Post h1 {
+  font-size: 2em;
+}
+
+.Post p {
+  font-size: 1.3em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 10%;
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+/*# sourceMappingURL=Index.css.map */
